@@ -1,6 +1,7 @@
 # Hocks-App
 Lesson 2 module 3
 
+For docker
 ```
 docker build -t hocks-app .
 
@@ -9,9 +10,16 @@ docker run -it -d --name hocks-app-container -p 3000:1234 -v $(pwd):/App hocks-a
 
 # need interactive
 docker exec -it hocks-app-container bash
-
-# add the start script to the package.json file
-# start: .....
-yarn start
 ```
+
+For tools and libraries.  
+
+````
+npm i -g parcel-bundler
+yarn init -y
+yarn add react react-dom
+apt install vim -y
+# edit package.json to include `yarn start` script
+```
+
 
